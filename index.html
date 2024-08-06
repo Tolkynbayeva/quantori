@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/normilize.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
   <title>Login</title>
 </head>
 
@@ -41,7 +42,26 @@
       <button class="login__button" aria-label="button" type="button" id="login__button">
         Login
       </button>
+      <div class="login__menu--mobile" id="login__menu--mobile"></div>
     </header>
+    <div class="login__nav--mobile" id="login__nav--mobile">
+      <nav class="login__nav-mobile">
+        <ul class="login__nav-list-mobile">
+          <li class="login__nav-item-mobile">
+            <a href="#home" class="login__nav-link-mobile active">Home</a>
+          </li>
+          <li class="login__nav-item-mobile">
+            <a href="#contact" class="login__nav-link-mobile">Contact</a>
+          </li>
+          <li class="login__nav-item-mobile">
+            <a href="#about" class="login__nav-link-mobile">About</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="login__button--mobile" aria-label="button" type="button" id="login__button">
+        Login
+      </button>  
+    </div>
     <main class="login__main">
       <div class="wrapper">
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="login__form" id="login__form">

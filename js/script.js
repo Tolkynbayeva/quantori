@@ -81,3 +81,10 @@ document.getElementById('refresh_token_button').addEventListener('click', functi
     console.error('Error:', error);
   });
 });
+
+const loginMenuMobile = document.getElementById('login__menu--mobile');
+const loginNavMobile = document.getElementById('login__nav--mobile');
+
+loginMenuMobile.addEventListener('click', () => {
+  loginNavMobile.classList.toggle('active');
+});

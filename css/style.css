@@ -110,6 +110,25 @@ body {
   border-radius: 8px;
 }
 
+.login__menu--mobile {
+  display: none;
+
+}
+
+.login__nav--mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 20px;
+  top: 18px;
+  right: 82px;
+  width: 30%;
+  background-color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8);
+}
+
 /* main */
 .login__main {
   display: flex;
