@@ -1,0 +1,183 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+button,
+input {
+	font: inherit;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #66837e;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 52px;
+}
+
+
+/* header */
+.login__header {
+  width: 100%;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+}
+
+.login__logo {
+  margin-right: 20px;
+}
+
+.login__nav-list {
+  display: flex;
+  border: 1px solid #66837e;
+  border-radius: 52px;
+}
+
+.login__nav-link {
+  display: inline-block;
+  font-size: 20px;
+	line-height: 20px;
+  padding: 12px 36px;
+}
+
+.login__nav-link.active {
+  background-color: #66837e;
+  color: #fff;
+  border-top-left-radius: 22px; 
+  border-bottom-left-radius: 22px; 
+}
+
+.login__button {
+  margin-left: auto;
+  padding: 8px 36px;
+  font-size: 20px;
+  background-color: #66837e;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+/* main */
+.login__main {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background-image: url('data:image/svg+xml,<svg width="1600" height="1200" xmlns="http://www.w3.org/2000/svg"><g><title>background</title><rect fill="%23fff" id="canvas_background" height="1202" width="1602" y="-1" x="-1"/><g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid"><rect fill="url(%23gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/></g></g><g><title>Layer 1</title><rect stroke="null" id="svg_1" height="814.41173" width="584.0588" y="-4.39704" x="-5.16176" stroke-width="0.5" fill="%2366837e"/><rect stroke="null" id="svg_3" height="843.098" width="553.07846" y="358.42648" x="1052.77945" stroke-width="0.5" fill="%23dd9857"/><rect stroke="null" id="svg_4" height="397.01958" width="1065.66672" y="803.34803" x="-9.3578" stroke-width="0.5" fill="%239dabb6"/><rect stroke="null" id="svg_6" height="361.92157" width="1021.94118" y="-1.12254" x="577.89715" stroke-width="0.5" fill="%239d4e2d"/><rect stroke="null" id="svg_7" height="443.549" width="474.90198" y="359.62255" x="577.89702" stroke-width="0.5" fill="%23495f4b"/></g></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login__form {
+  min-width: 380px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.login__form-block {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  width: 100%;
+}
+
+.login__form-label {
+  position: relative;
+}
+
+.login__input {
+  border-color: #66837e;
+}
+
+.login__form-button {
+  margin-left: auto;
+  font-weight: 700;
+}
+
+.login__reset {
+  margin-right: 20px;
+  width: 112px;
+  border-radius: 8px;
+  border: 1px solid #66837e;
+  background-color: transparent;
+  color: #66837e;
+}
+
+.login__submit {
+  width: 112px;
+  border-radius: 8px;
+  border: 1px solid #66837e;
+  background-color: #66837e;
+  color: #fff;
+}
+
+/* footer */
+.login__footer {
+  align-content: center;
+  min-height: 40px;
+  background-color: #37475e;
+  color: #fff;
+  font-weight: 700;
+  text-align: end;
+}
+
+.footer__text {
+  margin-left: auto;
+}
