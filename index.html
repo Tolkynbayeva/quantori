@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normilize.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Login</title>
 </head>
+
 <body>
-  
+  <div class="container">
+    <header class="login__header wrapper">
+      <a href="#" class="login__logo" tabindex="0" aria-label="account logo" target="_blank">
+        <svg fill="#66837e" width="50px" height="50px" viewBox="0 0 24 24">
+          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+          </g>
+        </svg>
+      </a>
+      <nav class="login__nav">
+        <ul class="login__nav-list">
+          <li class="login__nav-item">
+            <a href="#home" class="login__nav-link">Home</a>
+          </li>
+          <li class="login__nav-item">
+            <a href="#contact" class="login__nav-link">Contact</a>
+          </li>
+          <li class="login__nav-item">
+            <a href="#about" class="login__nav-link">About</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="login__button" aria-label="button" type="button" id="login__button">
+        Login
+      </button>
+    </header>
+    <main class="login__main">
+      <div class="wrapper">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="login__form" id="login_form">
+          <h1 class="login__title">Login</h1>
+          <div class="login__form-block">
+            <label for="email" class="login__form-label">Email</label>
+            <input type="email" name="email" id="email" class="login__input" required />
+          </div>
+          <div class="login__form-block">
+            <label for="password" class="login__form-label">Password</label>
+            <input type="password" name="password" id="password" class="login__input" required />
+          </div>
+          <div class="login__form-button">
+            <button class="login__reset" type="reset" id="login__reset">
+              Cancel
+            </button>
+            <button class="login__submit" type="submit" id="login__submit">
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="login__footer">
+      <!-- <div class="wrapper"> -->
+        <p class="footer__text wrapper">© Copyright 2024</p>
+      <!-- </div> -->
+    </footer>
+  </div>
 </body>
+
 </html>
